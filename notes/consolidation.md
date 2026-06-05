@@ -72,7 +72,7 @@ Gaussian elimination does two things simultaneously: factors A into LU, and solv
 
 **Why LU matters:** Pay the $O(n^3)$ factorization cost once. For each new right-hand side b, only
 need forward substitution $Lc = b$ then back substitution Ux = c — both $O(n^2)$. For k right-hand
-sides: $O(n^3) + k·O(n^2) vs k·O(n^3)$ without LU.
+sides: $O(n^3) + k·O(n^2)$ vs $k·O(n^3)$ without LU.
 
 **Forward substitution (Lc = b):** L is lower triangular — solve top to bottom, each row
 introduces exactly one new unknown.
