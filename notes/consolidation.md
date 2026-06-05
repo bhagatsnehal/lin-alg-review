@@ -17,7 +17,7 @@ The dot product has a dual interpretation via linear transformations:
 - Dotting with a **unit vector** $\hat{u}$ = project $v$ onto $\hat{u}$ and take the signed length.
 - Dotting with a **non-unit vector** $u$ = project onto $u$'s direction, then scale that length by $\|u\|$.
 
-**Duality:** any linear transformation from R^n -> R has a corresponding vector in R^n such that
+**Duality:** any linear transformation from $\mathbb{R}^n$ -> $\mathbb{R}$ has a corresponding vector in $\mathbb{R}^n$ such that
 applying the transformation is equivalent to taking a dot product with that vector.
 
 The symmetry argument: projection of $\hat{i}$ onto $\hat{u}$ equals projection of $\hat{u}$ onto $\hat{i}$
@@ -70,9 +70,9 @@ applies universally to any area, not just the unit square.
 
 Gaussian elimination does two things simultaneously: factors A into LU, and solves for x given b.
 
-**Why LU matters:** Pay the O(n^3) factorization cost once. For each new right-hand side b, only
-need forward substitution Lc = b then back substitution Ux = c — both O(n^2). For k right-hand
-sides: O(n^3) + k·O(n^2) vs k·O(n^3) without LU.
+**Why LU matters:** Pay the $O(n^3)$ factorization cost once. For each new right-hand side b, only
+need forward substitution $Lc = b$ then back substitution Ux = c — both $O(n^2)$. For k right-hand
+sides: $O(n^3) + k·O(n^2) vs k·O(n^3)$ without LU.
 
 **Forward substitution (Lc = b):** L is lower triangular — solve top to bottom, each row
 introduces exactly one new unknown.
@@ -99,16 +99,16 @@ For an m×n matrix of rank r:
 
 | Subspace | Dimension | Lives in |
 |---|---|---|
-| Row space | r | R^n |
-| Null space | n - r | R^n |
-| Column space | r | R^m |
-| Left null space | m - r | R^m |
+| Row space | r | $\mathbb{R}^n$ |
+| Null space | n - r | $\mathbb{R}^n$ |
+| Column space | r | $\mathbb{R}^m$ |
+| Left null space | m - r | $\mathbb{R}^m$ |
 
-**Row space and null space are orthogonal complements in R^n:**
+**Row space and null space are orthogonal complements in $\mathbb{R}^n$:**
 1. Orthogonality: Ax = 0 means every row dotted with any null space vector = 0. Extends to all
    row space vectors by linearity (linear combinations of rows are also orthogonal to null space).
 2. Complements: orthogonality rules out overlap; dimensions adding to n rules out gaps. Together
-   they guarantee every vector in R^n decomposes uniquely as x = x_row + x_null.
+   they guarantee every vector in $\mathbb{R}^n$ decomposes uniquely as x = x_row + x_null.
 
 **Row rank = column rank = r:** elimination produces a fixed number of pivots, which simultaneously
 counts independent rows and independent columns. Same pivot count, different perspectives.
