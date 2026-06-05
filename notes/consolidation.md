@@ -28,6 +28,11 @@ with $\hat{u}$ are the same operation.
 For non-unit vectors: scaling $\hat{u}$ by $t$ scales both components $u_x$ and $u_y$ by $t$,
 so the transformation matrix becomes $[tu_x, tu_y]$ — equivalent to projecting then scaling by $t$.
 
+Duality is mind-blowing! 
+**Video Transcript Snippet:**
+This is why taking the dot product with a unit vector can be interpreted as projecting a vector onto the span of that unit vector and taking the length. This is why the dot product with a non-unit vector can be interpreted as first projecting onto that vector, then scaling up the length of that projection by the length of the vector.
+
+
 ### Ch 10 — Cross products
 
 The cross product $p = v \times w$ is defined by the property:
@@ -47,6 +52,9 @@ Geometrically: this determinant equals the signed volume of the parallelepiped f
 
 **Throughline across Ch 7, 9, 10:** duality — the column space condition, dot-product-as-functional,
 and determinant-as-dot-product are all the same idea in different forms.
+
+**Video Transcript Snippet:**
+What vector p has the special property that when you take a dot product between p and some vector x, y, z, it gives the same result as plugging in x, y, z to the first column of a matrix whose other two columns have the coordinates of v and w, then computing the determinant. What 3D vector p has the special property that when you take a dot product between p and some other vector x, y, z, it gives the same result as if you took the signed volume of a parallelepiped defined by this vector x, y, z along with v and w. Start by taking the area of the parallelogram defined by v and w, then multiply it not by the length of x, y, z, but by the component of x, y, z that's perpendicular to that parallelogram.
 
 ### Ch 6 — The determinant
 
