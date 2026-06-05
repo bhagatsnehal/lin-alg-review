@@ -1,3 +1,9 @@
+"""
+Problem: reshape-matrix
+Difficulty: Easy
+Link: https://www.deep-ml.com/problems/3?from=Linear%20Algebra
+"""
+
 import numpy as np
 
 def reshape_matrix_scratch(a: list[list[int|float]], new_shape: tuple[int, int]) -> list[list[int|float]]:
